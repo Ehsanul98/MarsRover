@@ -1,4 +1,4 @@
-import Game from './Game.js';
+import Game from './src/Game.js';
 
 const game = new Game();
 game.run(`4 8

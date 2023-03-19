@@ -22,6 +22,7 @@ class Game {
 		this.processInput(input);
 		this.robots.forEach((currentRobot) => {
 			currentRobot.executeCommands(this.grid);
+			console.log(currentRobot.toString());
 		});
 	}
 }
