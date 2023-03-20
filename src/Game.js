@@ -3,9 +3,10 @@ import Robot from './Robot.js';
 
 class Game {
 	grid;
-	robots = [];
+	robots;
 
 	processInput(input) {
+		this.robots = [];
 		const lines = input.split('\n');
 		const [width, height] = lines[0].split(' ').map(Number);
 		this.grid = new Grid(width, height);
